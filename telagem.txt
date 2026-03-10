@@ -1,0 +1,183 @@
+--------- PT CHECAGEM CONTA ---------
+
+Usar o Checker do Laas, caso ele não funcione faça a parte manual.
+
+c:\program files (x86)\steam\userdata
+
+Tire Print dos números dentro da pasta.
+
+Loritta: +ocr no Chat de Telador e anexe ás prints.
+
+/telagem steam3id {Colar os números e colocar virgulas entre eles.} (Obs: No último não precisa por.)
+/telagem duplicadas {link steam ou SteamId.}
+/telagem Telar {discord da pessoa que será telada.}
+
+--------- PT TELAGEM INICIAL ---------
+
+Win R > Cmd > systeminfo
+Win R > Control Folders > Ocultar/Hide desmarcar tudo e mostrar pastas.
+Checar Área de Trabalho
+Documentos
+Pasta do CS:GO, em caso de ter "Imgui.ini", *Project.ini", "Pasta com nome de Cheat! (Exemplo: Pandora, OTC, Fatality, Lua, Gs e etc..)
+
+Win R > *App Data > Roaming > *Procurar nome de hack ou com.swiftsoft (Apenas na Roaming) [Com.SwiftSoft = Exloader]*
+-Se sim: exloader > modifications > Nome do Hack (Exemplo: Osiris, ILikeFeet, RaweTrip, Gamesense, Echozy, Qo0, Pandora, CsgoSimple e etc.)
+
+Win + R > App Data > Local (Olhar as Pastas CrashDumps e Temp.) {Não abrir a Local Low.}
+
+Win R > Temp Olhar todos os arquivos.
+
+Win + R > Recent > Olhar todos os arquivos.
+
+Win + R > Prefetch > Olhar todos os arquivos.
+
+Segurança do Windows > Histórico de proteção/Ameaças Permitidas
+
+Uso de dados ou Data Usage > 
+
+Painel Da Nvidia > Gerenciar as Configurações 3D > Configurações do Programa >  Desmarcar a Caixa (Mostrar somente os programas que estão nesse computador.) > Acrescentar > Procurar Programas suspeitos (Se a Placa for AMD não tem isso.)
+
+--------- PT TELAGEM COMPLEXA ---------    
+Win R > *Regedit> 
+
+HKEY_USERS: 
+
+HKEY_USERS > Primeiro numero grandão (Normalmente á quarta pasta) > SOFTWARE > NVIDIA Corporation > Ansel > -Procurar-
+HKEY_USERS > Pasta Terminada em 1001 ou 500 (Normalmente á quarta pasta) > SOFTWARE > Amd > HKids > -Procurar-
+
+HKEY_LOCAL_MACHINE:
+
+HKEY_LOCAL_MACHINE > SYSTEM > ControlSet001 > Services > bam > State > UserSettings > Numero grandão final 1001
+HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Radar > HeapLeakDetection > DiagnosedApplications > Csgo / Cs2.
+
+HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows Defender > Exclusions > Paths e as outras pastas.
+
+HKEY_LOCAL_MACHINE > SOFTWARE > Microsoft > Windows Search > VolumeInfoCache (Importante!!!!)
+
+HKEY_LOCAL_MACHINE > SYSTEM > ControlSet001 > Enum > USBSTOR (Raramente Usada).
+
+HKEY_LOCAL_MACHINE > SYSTEM > MountedDevices (Raramente Usada).
+
+
+
+
+
+
+
+
+
+*HKEY_CURRENT_USER:
+
+ 
+HKEY_CURRENT_USER > SOFTWARE > Classes > Local Settings > Software > Classes > Local Settings > Microsoft > Windows > Shell > MuiCache
+
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows > CurrentVersion > Explorer > FeatureUsage > Explorer >AppSwitch   }
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows > CurrentVersion > Explorer > FeatureUsage > Explorer > ShowJumpView }
+
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows > CurrentVersion > Explorer > ComDlg32 > OpenSavePidlMRU > 
+                                              dll }
+                                              exe }
+                                              zip }
+                                              rar }
+                                              dat }
+                                              bat }
+                                              Ink }
+
+Abra os números e veja o que está escrito.
+
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows> CurrentVersion > Explorer > FileExts >
+                                           .dll > OpenWithList
+                                           .exe > OpenWithList
+                                           .bat > OpenWithList
+                                           .exec > OpenWithList (Se tiver.)
+                                           .lua > OpenWithList (Se tiver.)
+                                           .ahk > OpenWithList (Se tiver.)
+                                           .vhd > OpenWithList (Se tiver.)
+                                           .cfg > OpenWithList
+                                           .dat > OpenWithList
+
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows> CurrentVersion > Explorer > Recent Docs (Raramente Usada).
+
+                                           .exe" > OpenWithList 
+                                           .Ink > OpenWithList 
+                                           .vhd > OpenWithList 
+                                           .lua > OpenWithList
+                                           .ini > OpenWithList
+
+
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > DirectInput > MostRecentApplication (Raramente Usada).
+
+
+
+
+                                         
+
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows> CurrentVersion > Explorer > TypedPaths
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows> CurrentVersion > Explorer > Run MRU
+
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows NT > CurrentVersion > AppCompatFlags > Compatibility Assistant > Store
+HKEY_CURRENT_USER > SOFTWARE > Microsoft > Windows NT > CurrentVersion > AppCompatFlags > Compatibility Assistant > Persisted
+
+
+HKEY_CURRENT_USER > SOFTWARE > WinRAR > ArcHistory
+HKEY_CURRENT_USER > SOFTWARE > 7-Zip > Compression > ArcHistory
+
+
+
+--------- PARTE DE PROGRAMAS ---------
+
+Journal Trace 
+Drive > Selecionar driver (se dois, abrir duas abas) > scan > layout > directory tree > C+ > steam >  userdata
+                                           Data grid > csgo.exe, .exe, .vhd, .ahk, .lua e Imgui ou imgui.ini
+CachedProgramsList > Olhinho > procurar 
+
+Shellbag Analyzer Cleaner > Analisar > Ver pastas
+
+Systeminformer > Processos:
+
+Explorer ➜ Propriedades ➜ Memory ➜ Options ➜ Strings - 5 Private, Image & Mapped + Extended Unicode
+Contains (case-insensitive): file:///wha
+Exibe arquivos acessados.
+
+Regex (case-insensitive): ^(?!C:)[A-Z]:[\\](?!\+|(u){FFFF}|rkr)
+Exibe arquivos executados, excluindo o disco C:.
+---
+Registry ➜ Propriedades ➜ Memory ➜ Options ➜ Strings - 5 Private, Image & Mapped + Extended Unicode
+Contains (case-insensitive): #func > .exe
+---
+csrss ➜ Propriedades ➜ Memory ➜ Options ➜ Strings - 5 Private, Image & Mapped + Extended Unicode
+Regex (case-insensitive): ^[A-Z]:\.+.exe
+Verifica todos os arquivos executados.
+---
+sihost ➜ Propriedades ➜ Memory ➜ Options ➜ Strings - 5 Length, Private & Mapped + Extended Unicode
+Contains (case-insensitive): n:
+(Se houver muitos arquivos, adicione .exe logo após).
+---
+taskhostw ➜ Propriedades ➜ Memory ➜ Options ➜ Strings - 5 Private, Image & Mapped + Extended Unicode
+Contains (case-insensitive): @file
+--
+Pesquisar por mpssvc ➜ Propriedades ➜ Memory ➜ Options ➜ Strings - 5 Private, Image & Mapped + Extended Unicode
+Regex (case-insensitive): ^TCP|UDP Query user
+---
+Navegador (Verificar qual e quantos o suspeito usa, fazer em todos) ➜ Propriedades ➜ Memory ➜ Options ➜ Strings - 5 Length, Private & Mapped + Extended Unicode
+Contains (case-insensitive): cdn.discordapp.com/attachments
+Puxa todos os arquivos baixados pelo Discord.
+
+Contains (case-insensitive): Pesquisar o histórico com palavras-chave como: csgo, cheat, hack, e use sua imaginação.
+
+
+
+System Informer > Dps > Propriedades ➜ Memory ➜ Options ➜ Strings - 5 Length, Private & Mapped + Extended Unicode. (Pegar as Strings no Discord de Telador.)
+
+
+
+--------- PARTE FINAL ---------
+Caso achar Hack ou Duplicate, mande no chat de Telador!!!!! Ou no privado de algum Superior.
+Tirar print do Hack ou Duplicate.
+Pegar Anydesk do Player.
+Reverter Control Folders.
+Apagar os Arquivos baixados. (Em caso do Process Hacker 3 é preciso que o Player reinicie o Pc e apague).
+Encerrar sala.
+Enviar pro Telados.
+
+Feito por: VSL E Arthur Vilhena.
